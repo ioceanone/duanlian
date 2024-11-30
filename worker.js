@@ -1,5 +1,5 @@
 const config = {
-  password: "lingchenone", // 管理面板使用密码 // if password != null, then use this config; otherwise, read password from KV.
+  password: "", // 管理面板使用密码 // if password != null, then use this config; otherwise, read password from KV.
   result_page: false, // 是否用特定的result页面来显示value // After get the value from KV, if use a page to show the result.
   theme: "", // 管理面板的主题 // Homepage theme, use the empty value for default theme. To use urlcool theme, please fill with "theme/urlcool" .
   cors: true, // 是否允许CORS使用API // Allow Cross-origin resource sharing for API requests.
@@ -17,15 +17,15 @@ const protect_keylist = [
   "password",
 ]
 
-let index_html = "https://ioceanone.github.io/Url-Shorten-Worker/" + config.theme + "/index.html"
-let result_html = "https://ioceanone.github.io/Url-Shorten-Worker/" + config.theme + "/result.html"
+let index_html = "https://ioceanone.github.io/duanlian/" + config.theme + "/index.html"
+let result_html = "https://ioceanone.github.io/duanlian/" + config.theme + "/result.html"
 
 const html404 = `<!DOCTYPE html>
   <html>
   <body>
     <h1>404 Not Found.</h1>
     <p>The url you visit is not found.</p>
-    <p> <a href="https://github.com/ioceanone/Url-Shorten-Worker/" target="_self">Fork me on GitHub</a> </p>
+    <p> <a href="https://github.com/ioceanone/duanlian/" target="_self">Fork me on GitHub</a> </p>
   </body>
   </html>`
 
